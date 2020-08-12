@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 93px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 165px;
+        height: 64px;
+        margin-right: 10px;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__events, &__contacts {
+        display: flex;
+        align-items: center;
+    }
+    &__square {
+        width: 35px;
+        height: 35px;
+        margin: 0 14px 0 34px;
+        border: 1px solid #323232;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__descr {
+        color: $second-color;
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}

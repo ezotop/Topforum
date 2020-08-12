@@ -1,0 +1,14 @@
+.page-exp {
+    color: $second-color;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    span {
+        text-transform: uppercase;
+    }
+    &_descr {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+.info {
+    min-height: 576px;
+    padding-bottom: 49px;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 363px;
+        text-align: center;
+    }
+    &__circle {
+        margin: 0 auto;
+        margin-bottom: 27px;
+        width: 169px;
+        height: 169px;
+        border: 1px solid $main-color;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__forum {
+        color: #757575;
+        font-size: 11px;
+        font-weight: 300;
+        margin-top: 16px;
+        span {
+            text-transform: uppercase;
+        }
+    }
+    button {
+        margin: 0 7px;
+        margin-top: 39px;
+    }
+}

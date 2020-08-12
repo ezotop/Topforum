@@ -1,0 +1,22 @@
+@import 'base/variables';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+@import 'blocks/chevron';
+@import 'blocks/page-exp';
+@import 'blocks/title_subtitle';
+@import 'blocks/ava_nimb';
+
+@import 'blocks/buttons';
+@import 'blocks/menu';
+@import 'blocks/header';
+@import 'blocks/conf';
+@import 'blocks/main-idea';
+@import 'blocks/info';
+@import 'blocks/reviews';

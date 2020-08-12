@@ -1,4 +1,13 @@
 $(document).ready(function() {
-    $('.your-class').slick();
+    $('.conf__slider').slick({
+        prevArrow: '<button type="button" class="slick-prev"><div class="chevron chevron_left chevron_white"></div></button>',
+        nextArrow: '<button type="button" class="slick-next"><div class="chevron chevron_right chevron_white"></div></button>'
+    });
+
+    $('.reviews__slider').slick({
+        prevArrow: '<button type="button" class="slick-prev"><div class="chevron chevron_left"></div></button>',
+        nextArrow: '<button type="button" class="slick-next"><div class="chevron chevron_right"></div></button>',
+        slidesToShow: 2
+    });
 });
           

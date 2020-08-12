@@ -1,0 +1,25 @@
+.button {
+    width: 153px;
+    height: 42px;
+    background-color: $main-color;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    &_club {
+        height: 38px;
+        background-color: #e8d8b6;
+        font-size: 12px;
+    }
+    &_more {
+        width: 120px;
+        height: 38px;
+        background-color: $learn-color;
+        text-transform: none;
+    }
+    &_dark {
+        background-color: $second-color;
+    }
+}

@@ -1,0 +1,58 @@
+.reviews {
+    min-height: 111px;
+    padding: 52px 0 61px 0;
+    background-color: #f8f3e9;
+    &__slider {
+        margin-top: 26px;
+    }
+    &__plate {
+        display: flex;
+        margin: 0 24px;
+    }
+    &__card {
+        padding: 26px;
+        width: 365px; 
+        min-height: 245px; 
+        margin-left: 35px;
+        background: #B5DDD4;
+        position: relative;
+        &:before {
+            content: "";
+            width: 0; 
+            height: 0;
+            position: absolute; 
+            right: 100%; 
+            top: calc(20% - 12px);
+            border-top: 21px solid transparent;
+            border-right: 21px solid #B5DDD4;
+            border-bottom: 21px solid transparent;
+        }
+    }
+    &__date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 119px;
+        height: 29px;
+        padding: 0 17px;
+        background-color: #bbbbbd;
+        color: #fff;
+        font-size: 9px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 11px;
+        color: $second-color;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .slick-next {
+        right: -30px;
+    }
+    .slick-prev {
+        right: auto;
+        left: -60px;
+    }
+}
