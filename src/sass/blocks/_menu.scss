@@ -16,7 +16,7 @@ nav {
     list-style-type: none;
     margin-bottom: 0;
     padding-left: 0;
-    height: 35px;
+    min-height: 35px;
     li {
         padding: 0 20px;
         border-right: 1px solid #474747;
@@ -35,6 +35,20 @@ nav {
         &:hover {
             color: #fff;
             text-decoration: none;
+        }
+        &_footer {
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+    &_footer {
+        display: block;
+        width: 137px;
+        height: 210px;
+        border-right: 1px solid #464645;
+        li {
+            padding: 0;
+            border: none;
         }
     }
 }

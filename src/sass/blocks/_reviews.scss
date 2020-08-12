@@ -14,7 +14,7 @@
         width: 365px; 
         min-height: 245px; 
         margin-left: 35px;
-        background: #B5DDD4;
+        background: #fff;
         position: relative;
         &:before {
             content: "";
@@ -24,7 +24,7 @@
             right: 100%; 
             top: calc(20% - 12px);
             border-top: 21px solid transparent;
-            border-right: 21px solid #B5DDD4;
+            border-right: 21px solid #fff;
             border-bottom: 21px solid transparent;
         }
     }
