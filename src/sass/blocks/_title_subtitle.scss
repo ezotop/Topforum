@@ -9,9 +9,17 @@
     color: $second-color;
     font-size: 17px;
     font-weight: 500;
-    margin-bottom: 20px;
     text-align: center;
     &_author {
         text-align: left;
+    }
+    &_upper {
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    &_sponsor {
+        color: $main-color;
+        font-size: 19px;
+        text-transform: uppercase;
     }
 }

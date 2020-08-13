@@ -7,13 +7,14 @@
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    text-align: center;
     &_club {
         height: 38px;
         background-color: #e8d8b6;
         font-size: 12px;
     }
     &_more {
+        display: block;
+        margin: 0 auto;
         width: 120px;
         height: 38px;
         background-color: $learn-color;
@@ -21,5 +22,8 @@
     }
     &_dark {
         background-color: $second-color;
+    }
+    &_mt39 {
+        margin: 39px 7px 0 7px;
     }
 }

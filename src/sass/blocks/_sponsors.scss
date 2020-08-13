@@ -1,0 +1,38 @@
+.sponsors {
+    min-height: 1176px;
+    padding: 48px 0 68px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__select {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        min-width: 450px;
+        min-height: 50px;
+        padding: 0 18px;
+        border: 1px solid #e8d8b6;
+        color: #606060;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__card {
+        max-width: 267px;
+        min-height: 360px;
+        margin: 47px 14px 0 14px;
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        height: 160px;
+        width: 100%;
+        border: 1px solid #f3ebda;
+        img {
+            max-width: 100%;
+        }
+    }
+}
