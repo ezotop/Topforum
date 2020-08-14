@@ -48,9 +48,13 @@
         border: 1px solid #464645;
         border-bottom: none;
     }
+    &__rights {
+        color: #f8f3e9;
+    }
     &__devs {
         display: flex;
         align-items: center;
+        color: #707070;
         &> div {
             margin: 0 5px;
         }

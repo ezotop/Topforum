@@ -5,6 +5,9 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        &_flex-start {
+            justify-content: flex-start;
+        }
     }
     &__select {
         display: block;
@@ -22,6 +25,9 @@
         max-width: 267px;
         min-height: 360px;
         margin: 47px 14px 0 14px;
+        &_4x {
+            max-width: 257px;
+        }
     }
     &__logo {
         display: flex;

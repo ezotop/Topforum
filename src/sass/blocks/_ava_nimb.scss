@@ -1,12 +1,18 @@
 .ava_nimb {
     width: 121px;
     height: 121px;
-    border: 5px solid #fff;
+    background-color: #fff;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
-        max-width: 100%;
+        max-width: calc(100% - 4px);
+    }
+    &_speakers {
+        border: 1px solid #e8d8b6;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
     }
 }
