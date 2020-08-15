@@ -20,6 +20,12 @@
         background-color: $learn-color;
         text-transform: none;
     }
+    &_form {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        width: 111px;
+    }
     &_dark {
         background-color: $second-color;
     }

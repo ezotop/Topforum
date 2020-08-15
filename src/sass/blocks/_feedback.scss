@@ -1,0 +1,42 @@
+.feedback {
+    min-height: 409px;
+    padding: 46px 0 44px 0;
+    background-color: $light-main;
+    &__wrapper {
+        display: flex;
+        margin-top: 38px;
+    }
+    &__descr {
+        margin: 25px 30px;
+        color: $second-color;
+        font-size: 15px;
+        line-height: 20px;
+        div {
+            margin-bottom: 10px;
+        }
+    }
+    &__subtitle { 
+        font-weight: 500;
+    }
+    &__phone {
+        display: block;
+        margin-bottom: 10px;
+        color: $second-color;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 24px;
+        &:hover {
+            color: $second-color;
+        }
+    }
+    &__faq {
+        font-weight: 400;
+        a {
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+    &__suggestion {
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,21 @@
+.form {
+    max-width: 555px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+    &__window {
+        height: 50px;
+        border: 1px solid #e8d8b6;
+        padding: 0 15px;
+        &_appeal {
+            width: 100%;
+            height: 115px;
+            margin-bottom: 25px;
+        }
+        &_email, &_name {
+            width: calc(50% - 7px);
+        }
+    }
+}
