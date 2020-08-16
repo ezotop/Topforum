@@ -1,6 +1,4 @@
 .ava_nimb {
-    width: 121px;
-    height: 121px;
     background-color: #fff;
     border-radius: 100%;
     display: flex;
@@ -9,10 +7,22 @@
     img {
         max-width: calc(100% - 4px);
     }
+    &_reviews {
+        width: 121px;
+        height: 121px;
+    }
     &_speakers {
         border: 1px solid #e8d8b6;
         margin: 0 auto;
         width: 150px;
         height: 150px;
+    }
+    &_page-detail_speaker {
+        width: 327px;
+        height: 327px;
+        margin: 30px auto;
+        img {
+            width: calc(100% - 18px);
+        }
     }
 }

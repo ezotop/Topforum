@@ -5,9 +5,14 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 363px;
+        margin-top: 35px;
     }
     &__circle {
         margin: 0 auto;
