@@ -547,9 +547,9 @@
         <div class="container">
             <div class="title">Feedback</div>
             <div class="feedback__wrapper">
-                <form class="form">
+                <form class="form form_contact">
                     <div class="subtitle subtitle_form">Your appeal</div>
-                    <textarea class="form__window form__window_appeal" name="appeal"></textarea>
+                    <textarea class="form__window form__window_appeal" name="appeal" type="text"></textarea>
                     <div class="subtitle subtitle_form">How to contact you?</div>
                     <div class="form__wrapper">
                         <input class="form__window form__window_email" name="email" type="text" placeholder="E-mail">
@@ -564,6 +564,96 @@
                     <div class="feedback__suggestion">All suggestions and comments are considered mandatory!</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="register">
+        <div class="container">
+            <div class="title">2  EASY STEPS to REGISTER</div>
+            <div class="register__labels">
+                <div class="register__label">FILL IN THE FORM in ENGLISH</div>
+                <div class="chevron chevron_down"></div>
+                <div class="register__label">read THOROUGHLY TERMS&CONDITIONS</div>
+            </div>
+            <form class="form form_register">
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Please select a conference:</div>
+                    <select class="sponsors__select sponsors__select_register" name="select_conf" id="select_conf">
+                        <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
+                        <option value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
+                    </select>
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Please choose <a href="#">delegate package</a>:</div>
+                    
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Name:</div>
+                    <input class="form__window form__window_register" name="name" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Surame:</div>
+                    <input class="form__window form__window_register" name="surname" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Company Name:</div>
+                    <input class="form__window form__window_register" name="compname" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Business Area:</div>
+                    <select class="sponsors__select sponsors__select_register" name="area" id="select_conf">
+                        <option value="Wealth TOP FORUM Israel 2016">Forex companies</option>
+                        <option value="Wealth TOP FORUM Israel 2015">Another companies</option>
+                    </select>
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Position:</div>
+                    <input class="form__window form__window_register" name="position" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">E-mail (for organizers):</div>
+                    <input class="form__window form__window_register" name="orgmail" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">E-mail (for sponsors):</div>
+                    <input class="form__window form__window_register" name="sponsormail" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Mobile Number (for organizers):</div>
+                    <input class="form__window form__window_register" name="orgphone" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Country:</div>
+                    <input class="form__window form__window_register" name="country" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Web-site:</div>
+                    <input class="form__window form__window_register" name="web-site" type="text">
+                </div>
+
+                <div class="register__wrapper">
+                    <div class="subtitle subtitle_form">Method of payment</div>
+                    <input class="form__window form__window_register" name="payment" type="text">
+                </div>
+
+                <div class="register__wrapper register__wrapper_rtl">
+                    <input class="register__checkbox" type="checkbox">
+                    <div class="register__rules-accept">I accept <a href="#">Terms&Conditions</a></div>
+                    <button class="button button_form">Send</button>
+                </div>
+            </form>
+
         </div>
     </section>
 
@@ -604,6 +694,26 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="subscribe">
+            <div class="modal__close">&times;</div>
+            <!-- <div class="subtitle subtitle_upper">Subscribe</div>
+            <div class="promo_text promo_text_descr">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div> -->
+            <form class="form form_subscribe" action="#">
+                <div class="subtitle subtitle_upper">Subscribe</div>
+            <div class="promo_text promo_text_descr">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+                <input class="form__window form__window_subscribe" name="name" placeholder="Name and surname " type="text">
+                <input class="form__window form__window_subscribe" name="compname" placeholder="Company name ">
+                <input class="form__window form__window_subscribe" name="email" placeholder="E-mail" type="email">
+                <button class="button button_subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

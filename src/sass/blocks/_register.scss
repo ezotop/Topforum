@@ -1,0 +1,47 @@
+.register {
+    min-height: 1195px;
+    padding: 48px 0 43px 0;
+    &__labels {
+        margin-top: 25px;
+    }
+    &__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 414px;
+        height: 58px;
+        border: 2px solid $main-color;
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_rtl {
+            width: 426px;
+            margin: 34px 0 0 auto;
+            justify-content: flex-end;
+        }
+    }
+    &__checkbox {
+        display: block;
+        width: 19px;
+        height: 19px;
+        border: 1px solid #e8d8b6;
+        margin-right: 10px;
+    }
+    &__rules-accept{
+        color: #606060;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        a {
+            color: #606060;
+            text-decoration: underline;
+        }
+    }
+}

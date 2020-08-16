@@ -1,6 +1,6 @@
 .chevron {
     min-height: 12px;
-    width: 47px; 
+    width: 50px; 
     margin: 6px;
     position: relative;
     &:before, 
@@ -9,7 +9,7 @@
     height: 3px; 
     width: 50%;
     position: absolute; 
-    top: 0;
+    top: 5px;
     background: $main-color;
     }
     &:before {
@@ -31,5 +31,9 @@
         &:after {
             background: #fff;
         }
+    }
+    &_down {
+        width: 22px;
+        margin: 8px auto;
     }
 }

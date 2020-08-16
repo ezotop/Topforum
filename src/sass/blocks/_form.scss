@@ -1,14 +1,38 @@
 .form {
-    max-width: 555px;
+    &_contact {
+        max-width: 555px;
+    }
+    &_register {
+        width: 656px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+    &_subscribe {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 421px;
+        min-height: 372px;
+        border: 2px solid $main-color;
+        margin: 0 auto;
+        padding: 12px 28px 31px 28px;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
     &__window {
+        margin: 8px 0;
         height: 50px;
         border: 1px solid #e8d8b6;
         padding: 0 15px;
+        &_register {
+            width: 426px;
+        }
+        &_subscribe {
+            width: 100%;
+        }
         &_appeal {
             width: 100%;
             height: 115px;

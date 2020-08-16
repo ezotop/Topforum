@@ -20,6 +20,11 @@
         color: #606060;
         font-size: 14px;
         font-weight: 300;
+        &_register {
+            margin: 0;
+            margin-bottom: 11px;
+            min-width: 426px;
+        }
     }
     &__card {
         max-width: 267px;
