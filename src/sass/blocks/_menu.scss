@@ -10,23 +10,30 @@ nav {
 }
 
 .menu {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     margin-bottom: 0;
     padding-left: 0;
-    min-height: 35px;
     li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0 20px;
-        border-right: 1px solid #474747;
+        height: 100%;
         &:first-child {
-            padding-left: 0;
+            padding-left: 3px;
         }
-        &:last-child {
-            padding-right: 0;
-            border-right: none;
+        &:hover {
+            background-color: #212121;
         }
+    }
+    &__divider {
+        height: 35px;
+        width: 1px;
+        background-color: #474747;
     }
     &__link {
         color: #fff;
@@ -49,6 +56,7 @@ nav {
         li {
             padding: 0;
             border: none;
+            height: auto;
         }
     }
 }

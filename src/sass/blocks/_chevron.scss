@@ -1,39 +1,95 @@
 .chevron {
-    min-height: 12px;
-    width: 50px; 
-    margin: 6px;
+    height: 46px;
     position: relative;
-    &:before, 
-    &:after {
-    content: "";
-    height: 3px; 
-    width: 50%;
-    position: absolute; 
-    top: 5px;
-    background: $main-color;
-    }
-    &:before {
-    left: 0;
-    transform: skew(0deg, 20deg);
-    }
-    &:after {
-    right: 0;
-    transform: skew(0deg, -20deg);
-    }
-    &_left {
-        transform: rotate(90deg);
+	&_left {
+        &:before{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            content: "";
+            display: block;
+            width: 2px;
+            height: 23px;
+            background-color: #fff;
+            transform: skew(-25deg) translateX(-50%);
+        }
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            content: "";
+            display: block;
+            width: 2px;
+            height: 23px;
+            background-color: #fff;
+            transform: skew(25deg) translateX(-50%);
+        }
+        &_gold {
+            &:before {
+                background-color: $main-color;
+            }
+            &:after {
+                background-color: $main-color;
+            }
+        }
     }
     &_right {
-        transform: rotate(-90deg);
-    }
-    &_white {
-        &:before,
+        &:before{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            content: "";
+            display: block;
+            width: 2px;
+            height: 23px;
+            background-color: #fff;
+            transform: skew(25deg) translateX(-50%);
+        }
         &:after {
-            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            content: "";
+            display: block;
+            width: 2px;
+            height: 23px;
+            background-color: #fff;
+            transform: skew(-25deg) translateX(-50%);
+        }
+        &_gold {
+            &:before {
+                background-color: $main-color;
+            }
+            &:after {
+                background-color: $main-color;
+            }
         }
     }
     &_down {
-        width: 22px;
         margin: 8px auto;
+        height: 8px;
+        width: 22px;
+        &:before{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: $main-color;
+            transform: skew(25deg) rotate(25deg);
+        }
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: $main-color;
+            transform: skew(-25deg) rotate(-25deg);
+        }
     }
 }
