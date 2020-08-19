@@ -256,7 +256,7 @@
                 <option class="sponsors__option" value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
                 <option class="sponsors__option" value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
             </select>
-            <div class="sponsors__wrapper sponsors__2016">
+            <div class="sponsors__wrapper">
                 <div class="sponsors__card">
                     <div class="subtitle subtitle_sponsor">General Sponsor</div>
                     <div class="sponsors__logo"><img src="icons/sponsors/lacoste.png" alt="lacoste"></div>
@@ -302,35 +302,6 @@
                     </div>
                     <button class="button button_more">Learn more</button>
                 </div>
-            </div>
-            <div class="sponsors__wrapper sponsors__2015">
-                <div class="sponsors__card">
-                    <div class="subtitle subtitle_sponsor">General Sponsor</div>
-                    <div class="sponsors__logo"><img src="icons/sponsors/lacoste.png" alt="lacoste"></div>
-                    <div class="subtitle subtitle_upper">Lacoste</div>
-                    <div class="promo_text promo_text_descr">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="button button_more">Learn more</button>
-                </div>
-                <div class="sponsors__card">
-                    <div class="subtitle subtitle_sponsor">Platinum Sponsor</div>
-                    <div class="sponsors__logo"><img src="icons/sponsors/kenzo.png" alt="kenzo"></div>
-                    <div class="subtitle subtitle_upper">Kenzo</div>
-                    <div class="promo_text promo_text_descr">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="button button_more">Learn more</button>
-                </div>
-                <div class="sponsors__card">
-                    <div class="subtitle subtitle_sponsor">Hi-Tech Sponsor</div>
-                    <div class="sponsors__logo"><img src="icons/sponsors/dove.png" alt="dove"></div>
-                    <div class="subtitle subtitle_upper">Dove</div>
-                    <div class="promo_text promo_text_descr">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-                    </div>
-                    <button class="button button_more">Learn more</button>
-                </div>     
             </div>
         </div>
     </section>
@@ -575,7 +546,7 @@
             <div class="feedback__wrapper">
                 <form class="form form_contact">
                     <div class="subtitle subtitle_form">Your appeal</div>
-                    <textarea class="form__window form__window_appeal" name="appeal" type="text"></textarea>
+                    <textarea style="resize: none;" class="form__window form__window_appeal" name="appeal" type="text"></textarea>
                     <div class="subtitle subtitle_form">How to contact you?</div>
                     <div class="form__wrapper">
                         <input class="form__window form__window_email" name="email" type="text" placeholder="E-mail">
@@ -604,14 +575,14 @@
             <form class="form form_register" id="form-register" action="#">
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">Please select a conference:</div>
-                    <select class="sponsors__select sponsors__select_register" name="select_conf" id="select_conf" required>
+                    <select class="sponsors__select sponsors__select_register" name="select_conf" required>
                         <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
                         <option value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
                     </select>
                 </div>
 
                 <div class="register__wrapper">
-                    <div class="subtitle subtitle_form">Please choose <a href="#">delegate package</a>:</div>
+                    <div class="subtitle subtitle_form">Please choose <a href="#">delegate package</a>: <span>*</span></div>
                     <div class="register__wrapper register__wrapper_ltl">
                         <div class="form__radio_btn">
                             <input id="std_package" type="radio" name="package" value="standard" required>
@@ -625,12 +596,12 @@
                 </div>
 
                 <div class="register__wrapper">
-                    <div class="subtitle subtitle_form">Name:</div>
+                    <div class="subtitle subtitle_form">Name:<span>*</span></div>
                     <input class="form__window form__window_register" name="name" type="text">
                 </div>
 
                 <div class="register__wrapper">
-                    <div class="subtitle subtitle_form">Surame:</div>
+                    <div class="subtitle subtitle_form">Surame:<span>*</span></div>
                     <input class="form__window form__window_register" name="surname" type="text">
                 </div>
 
@@ -653,7 +624,7 @@
                 </div>
 
                 <div class="register__wrapper">
-                    <div class="subtitle subtitle_form">E-mail (for organizers):</div>
+                    <div class="subtitle subtitle_form">E-mail (for organizers):<span>*</span></div>
                     <input class="form__window form__window_register" name="email" type="email">
                 </div>
 
@@ -663,7 +634,7 @@
                 </div>
 
                 <div class="register__wrapper">
-                    <div class="subtitle subtitle_form">Mobile Number (for organizers):</div>
+                    <div class="subtitle subtitle_form">Mobile Number (for organizers):<span>*</span></div>
                     <input class="form__window form__window_register" name="orgphone" type="tel">
                 </div>
 

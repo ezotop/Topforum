@@ -25,10 +25,10 @@ $(document).ready(function() {
     });
 
     //Переключение селектов
-    $('select.sponsors__select').on('click', 'option:not(.sponsors__option_active)', function() {
+    /* $('select.sponsors__select').on('click', 'option:not(.sponsors__option_active)', function() {
         $(this)
-            .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
-            .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+            .addClass('sponsors__option_active').siblings().removeClass('sponsors__option_active')
+            .closest('div.container').find('div.sponsors__wrapper').removeClass('sponsors__wrapper_active').eq($(this).index()).addClass('sponsors__wrapper_active');
     });
 
     function toggleSlide(item) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
     };
 
     toggleSlide('.catalog-item__link');
-    toggleSlide('.catalog-item__back');
+    toggleSlide('.catalog-item__back'); */
 
     //Validation
     function validateForms(form) {
@@ -51,22 +51,21 @@ $(document).ready(function() {
                 name: "required",
                 surname: "required",
                 orgphone: "required",
-                checkbox: "required",
                 email: {
                     required: true,
                     email: true
                 }
             },
-            messages: {
-                name: "",
-                surname: "",
-                orgphone: "",
-                checkbox: "",
+            /* messages: {
+                name: "q",
+                surname: "q",
+                orgphone: "q",
+                checkbox: "q",
                 email: {
-                    required: "",
-                    email: ""
+                    required: "q",
+                    email: "w"
                 }
-            }
+            } */
         });
     };
 
