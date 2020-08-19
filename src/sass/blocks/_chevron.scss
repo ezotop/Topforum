@@ -78,7 +78,7 @@
             width: 50%;
             height: 2px;
             background-color: $main-color;
-            transform: skew(25deg) rotate(25deg);
+            transform: skew(25deg) rotate(25deg) translateY(-50%);
         }
         &:after {
             position: absolute;
@@ -89,7 +89,33 @@
             width: 50%;
             height: 2px;
             background-color: $main-color;
-            transform: skew(-25deg) rotate(-25deg);
+            transform: skew(-25deg) rotate(-25deg) translateY(-50%);
+        }
+    }
+    &_up {
+        width: 22px;
+        height: 8px;
+        &:before{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: $main-color;
+            transform: skew(-25deg) rotate(-25deg) translateY(-50%);
+        }
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: $main-color;
+            transform: skew(25deg) rotate(25deg) translateY(-50%);
         }
     }
 }

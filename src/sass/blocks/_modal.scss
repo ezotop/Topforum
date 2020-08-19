@@ -12,6 +12,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 421px;
+    min-height: 372px;
+    border: 2px solid $main-color;
+    margin: 0 auto;
+    padding: 12px 28px 31px 28px;
     &__close {
         position: absolute;
         right: -40px;

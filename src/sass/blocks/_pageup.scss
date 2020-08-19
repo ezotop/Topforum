@@ -1,0 +1,12 @@
+.pageup {
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 40%;
+    height: 42px;
+    width: 42px;
+    border: 1px solid $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
+    <header id="up">
         <nav>
             <div class="container">
                 <div class="nav__wrapper">
@@ -253,10 +253,10 @@
             </div>
             <div class="subtitle subtitle_upper">Please select a conference </div>
             <select class="sponsors__select" name="select_conf" id="select_conf">
-                <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
-                <option value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
+                <option class="sponsors__option" value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
+                <option class="sponsors__option" value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
             </select>
-            <div class="sponsors__wrapper">
+            <div class="sponsors__wrapper sponsors__2016">
                 <div class="sponsors__card">
                     <div class="subtitle subtitle_sponsor">General Sponsor</div>
                     <div class="sponsors__logo"><img src="icons/sponsors/lacoste.png" alt="lacoste"></div>
@@ -302,6 +302,35 @@
                     </div>
                     <button class="button button_more">Learn more</button>
                 </div>
+            </div>
+            <div class="sponsors__wrapper sponsors__2015">
+                <div class="sponsors__card">
+                    <div class="subtitle subtitle_sponsor">General Sponsor</div>
+                    <div class="sponsors__logo"><img src="icons/sponsors/lacoste.png" alt="lacoste"></div>
+                    <div class="subtitle subtitle_upper">Lacoste</div>
+                    <div class="promo_text promo_text_descr">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                    </div>
+                    <button class="button button_more">Learn more</button>
+                </div>
+                <div class="sponsors__card">
+                    <div class="subtitle subtitle_sponsor">Platinum Sponsor</div>
+                    <div class="sponsors__logo"><img src="icons/sponsors/kenzo.png" alt="kenzo"></div>
+                    <div class="subtitle subtitle_upper">Kenzo</div>
+                    <div class="promo_text promo_text_descr">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                    </div>
+                    <button class="button button_more">Learn more</button>
+                </div>
+                <div class="sponsors__card">
+                    <div class="subtitle subtitle_sponsor">Hi-Tech Sponsor</div>
+                    <div class="sponsors__logo"><img src="icons/sponsors/dove.png" alt="dove"></div>
+                    <div class="subtitle subtitle_upper">Dove</div>
+                    <div class="promo_text promo_text_descr">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                    </div>
+                    <button class="button button_more">Learn more</button>
+                </div>     
             </div>
         </div>
     </section>
@@ -564,7 +593,7 @@
         </div>
     </section>
 
-    <section class="register">
+    <section class="register" id="register">
         <div class="container">
             <div class="title">2  EASY STEPS to REGISTER</div>
             <div class="register__labels">
@@ -572,10 +601,10 @@
                 <div class="chevron chevron_down"></div>
                 <div class="register__label">read THOROUGHLY TERMS&CONDITIONS</div>
             </div>
-            <form class="form form_register">
+            <form class="form form_register" id="form-register" action="#">
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">Please select a conference:</div>
-                    <select class="sponsors__select sponsors__select_register" name="select_conf" id="select_conf">
+                    <select class="sponsors__select sponsors__select_register" name="select_conf" id="select_conf" required>
                         <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
                         <option value="Wealth TOP FORUM Israel 2015">Wealth TOP FORUM Israel 2015</option>
                     </select>
@@ -583,7 +612,16 @@
 
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">Please choose <a href="#">delegate package</a>:</div>
-                    
+                    <div class="register__wrapper register__wrapper_ltl">
+                        <div class="form__radio_btn">
+                            <input id="std_package" type="radio" name="package" value="standard" required>
+                            <label for="std_package">Standard</label>
+                        </div>
+                        <div class="form__radio_btn">
+                            <input id="premium_package" type="radio" name="package" value="premium">
+                            <label for="premium_package">Premium</label>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="register__wrapper">
@@ -616,17 +654,17 @@
 
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">E-mail (for organizers):</div>
-                    <input class="form__window form__window_register" name="orgmail" type="text">
+                    <input class="form__window form__window_register" name="email" type="email">
                 </div>
 
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">E-mail (for sponsors):</div>
-                    <input class="form__window form__window_register" name="sponsormail" type="text">
+                    <input class="form__window form__window_register" name="E-mail" type="email">
                 </div>
 
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">Mobile Number (for organizers):</div>
-                    <input class="form__window form__window_register" name="orgphone" type="text">
+                    <input class="form__window form__window_register" name="orgphone" type="tel">
                 </div>
 
                 <div class="register__wrapper">
@@ -641,11 +679,28 @@
 
                 <div class="register__wrapper">
                     <div class="subtitle subtitle_form">Method of payment</div>
-                    <input class="form__window form__window_register" name="payment" type="text">
+                    <div class="register__wrapper register__wrapper_ltl register__wrapper_ltl_payment">
+                        <div class="form__radio_btn form__radio_btn_payment">
+                            <input id="free" type="radio" name="payment" value="free">
+                            <label for="free">Free</label>
+                        </div>
+                        <div class="form__radio_btn form__radio_btn_payment">
+                            <input id="visa" type="radio" name="payment" value="visa">
+                            <label for="visa"><img src="icons/visa.png" alt="visa"></label>
+                        </div>
+                        <div class="form__radio_btn form__radio_btn_payment">
+                            <input id="invoice" type="radio" name="payment" value="invoice">
+                            <label for="invoice">Invoice</label>
+                        </div>
+                        <div class="form__radio_btn form__radio_btn_payment">
+                            <input id="paypal" type="radio" name="payment" value="paypal">
+                            <label for="paypal"><img src="icons/paypal.png" alt="paypal"></label>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="register__wrapper register__wrapper_rtl">
-                    <input class="register__checkbox" type="checkbox">
+                    <input class="register__checkbox" type="checkbox" name="checkbox">
                     <div class="register__rules-accept">I accept <a href="#">Terms&Conditions</a></div>
                     <button class="button button_form">Send</button>
                 </div>
@@ -829,14 +884,16 @@
         </div>
     </footer>
 
+    <a href="#up" class="pageup"><div class="chevron chevron_up"></div></a>
+
     <div class="overlay">
         <div class="modal" id="subscribe">
             <div class="modal__close">&times;</div>
-            <form class="form form_subscribe" action="#">
-                <div class="subtitle subtitle_upper">Subscribe</div>
+            <div class="subtitle subtitle_upper">Subscribe</div>
             <div class="promo_text promo_text_descr">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </div>
+            <form class="form form_subscribe" id="subscribeform">
                 <input class="form__window form__window_subscribe" name="name" placeholder="Name and surname " type="text">
                 <input class="form__window form__window_subscribe" name="compname" placeholder="Company name ">
                 <input class="form__window form__window_subscribe" name="email" placeholder="E-mail" type="email">
@@ -847,6 +904,8 @@
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
