@@ -18,16 +18,23 @@ nav {
     margin-bottom: 0;
     padding-left: 0;
     li {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0 20px;
         height: 100%;
+        transition: 0.5s all;
+        cursor: pointer;
         &:first-child {
             padding-left: 3px;
         }
         &:hover {
             background-color: #212121;
+            .menu__drop {
+                opacity: 1;
+                pointer-events: visible;
+            }
         }
     }
     &__divider {
@@ -46,6 +53,44 @@ nav {
         &_footer {
             font-size: 14px;
             line-height: 30px;
+        }
+    }
+    &__drop {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: 100%;
+        left: 0;
+        width: 295px;
+        padding: 0;
+        background-color: #fff;
+        border: 1px solid #d6d6d6;
+        opacity: 0;
+        pointer-events: none;
+        li {
+            height: 48px;
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                content: " ";
+                width: calc(100% - 24px);
+                height: 1px;
+                background-color: #d6d6d6;
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            &:hover {
+                background-color: #d6d6d6;
+            }
+            a {
+                color: $second-color;
+                text-decoration: none;
+            }
         }
     }
     &_footer {
